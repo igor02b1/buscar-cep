@@ -17,6 +17,7 @@ function mostrarEndereco(dados) {
     let resultado = document.querySelector('#resultado');
     if(dados.erro) {
         resultado.innerHTML = "não foi possível localizar o endereço";
+        
     } else {
     resultado.innerHTML = `<p>Endereço: ${dados.logradouro}</p>
                             <p>Complemento: ${dados.complemento}</p>
@@ -24,3 +25,4 @@ function mostrarEndereco(dados) {
                             <p>Cidade: ${dados.localidade} - ${dados.bairro}</p>`
             }
 }
+
